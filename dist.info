@@ -1,0 +1,15 @@
+--- This file is part of LuaDist project
+
+name = "luagd"
+version = "2.0.33r2"
+
+desc = "Lua bindings to the GD library"
+author = "Alexandre Ittner"
+url = "http://luaforge.net/projects/lzlib/"
+license = "MIT"
+maintainer = "Peter Drahoš"
+
+depends = {
+	"gd",
+	"lua ~> 5.1"
+}
