@@ -33,13 +33,12 @@ CC=gcc
 # change the next ones.
 
 # Name of .pc file. "lua5.1" on Debian/Ubuntu
-LUAPKG=lua5.1
 OUTFILE=gd.so
-CFLAGS=`gdlib-config --cflags` `pkg-config $(LUAPKG) --cflags` -O3 -Wall
+CFLAGS=`gdlib-config --cflags` `pkg-config lua lua5.1 --cflags 2>/dev/null` -O3 -Wall
 GDFEATURES=`gdlib-config --features |sed -e "s/GD_/-DGD_/g"`
 LFLAGS=-shared `gdlib-config --ldflags` `gdlib-config --libs` \
-    `pkg-config $(LUAPKG) --libs` -lgd
-INSTALL_PATH=`pkg-config $(LUAPKG) --variable=INSTALL_CMOD`
+    `pkg-config lua lua5.1 --libs 2>/dev/null` -lgd
+INSTALL_PATH=`pkg-config lua lua5.1 --variable=INSTALL_CMOD 2>/dev/null`
 
 
 # ---------------------------------------------------------------------------
