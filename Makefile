@@ -66,7 +66,7 @@ INSTALL_PATH=`pkg-config lua lua5.1 --variable=INSTALL_CMOD 2>/dev/null`
 all: $(OUTFILE)
 
 $(OUTFILE): luagd.c
-	$(CC) -o $(OUTFILE) $(GDFEATURES) $(CFLAGS) $(LFLAGS) luagd.c
+	$(CC) -o $(OUTFILE) $(GDFEATURES) $(CFLAGS) luagd.c $(LFLAGS)
 	lua test_features.lua
 
 install: $(OUTFILE)
