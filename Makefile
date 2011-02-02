@@ -34,7 +34,7 @@ CC=gcc
 
 # Name of .pc file. "lua5.1" on Debian/Ubuntu
 OUTFILE=gd.so
-CFLAGS=`gdlib-config --cflags` `pkg-config lua lua5.1 --cflags 2>/dev/null` -O3 -Wall
+CFLAGS=`gdlib-config --cflags` `pkg-config lua lua5.1 --cflags 2>/dev/null` -O3 -Wall -fPIC
 GDFEATURES=`gdlib-config --features |sed -e "s/GD_/-DGD_/g"`
 LFLAGS=-shared `gdlib-config --ldflags` `gdlib-config --libs` \
     `pkg-config lua lua5.1 --libs 2>/dev/null` -lgd
