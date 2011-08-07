@@ -10,6 +10,6 @@ license = "MIT"
 maintainer = "Peter Drahoš"
 
 depends = {
-	"gd",
+	"libgd >= 2.1",
 	"lua ~> 5.1"
 }
