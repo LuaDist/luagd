@@ -1,0 +1,69 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "Alexandre Ittner"
+depends = {
+[[libgd >= 2.1]],
+[[lua ~> 5.1]],
+}
+
+desc = "Lua bindings to the GD library"
+version = "2.0.33r2"
+maintainer = "Peter Drahoš"
+files = {
+Runtime = {
+[[lib/lua/gd.so]],
+}
+,
+Documentation = {
+[[share/luagd/doc//catdiff.png]],
+[[share/luagd/doc//stdfonts.png]],
+[[share/luagd/doc//catmsg.png]],
+[[share/luagd/doc//fontconfig-example.png]],
+[[share/luagd/doc//lua-gd.png]],
+[[share/luagd/doc//sierpinski.png]],
+[[share/luagd/doc//cat.png]],
+[[share/luagd/doc//clock-example.png]],
+[[share/luagd/doc//gifanim.gif]],
+[[share/luagd/doc//index.html]],
+}
+,
+Data = {
+[[share/luagd/README]],
+[[share/luagd/COPYING]],
+}
+,
+Example = {
+[[share/luagd/example//stdfont.lua]],
+[[share/luagd/example//poly.lua]],
+[[share/luagd/example//gifanim.lua]],
+[[share/luagd/example//gifanim3.lua]],
+[[share/luagd/example//test.lua]],
+[[share/luagd/example//Vera.ttf]],
+[[share/luagd/example//lualogo.png]],
+[[share/luagd/example//paper.png]],
+[[share/luagd/example//bugs.jpg]],
+[[share/luagd/example//test2.lua]],
+[[share/luagd/example//counter.txt]],
+[[share/luagd/example//ellipse.lua]],
+[[share/luagd/example//utf-8.png]],
+[[share/luagd/example//clock.lua]],
+[[share/luagd/example//steg.lua]],
+[[share/luagd/example//gifanim2.lua]],
+[[share/luagd/example//ttftextex.lua]],
+[[share/luagd/example//lualogo.lua]],
+[[share/luagd/example//brush.lua]],
+[[share/luagd/example//fontconfig.lua]],
+[[share/luagd/example//grid.png]],
+[[share/luagd/example//lua-gd.png]],
+[[share/luagd/example//circle.lua]],
+[[share/luagd/example//fractal.lua]],
+[[share/luagd/example//utf-8.lua]],
+[[share/luagd/example//ttftext.lua]],
+[[share/luagd/example//counter.lua]],
+}
+,
+}
+
+url = "http://luaforge.net/projects/lzlib/"
+name = "luagd"
+license = "MIT"
